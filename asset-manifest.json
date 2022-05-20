@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/cafe-peter/static/css/main.6ab62bdb.chunk.css",
+    "main.js": "/cafe-peter/static/js/main.76b47d8e.chunk.js",
+    "main.js.map": "/cafe-peter/static/js/main.76b47d8e.chunk.js.map",
+    "runtime-main.js": "/cafe-peter/static/js/runtime-main.45273f18.js",
+    "runtime-main.js.map": "/cafe-peter/static/js/runtime-main.45273f18.js.map",
+    "static/js/2.839bdf25.chunk.js": "/cafe-peter/static/js/2.839bdf25.chunk.js",
+    "static/js/2.839bdf25.chunk.js.map": "/cafe-peter/static/js/2.839bdf25.chunk.js.map",
+    "static/js/3.ef98217b.chunk.js": "/cafe-peter/static/js/3.ef98217b.chunk.js",
+    "static/js/3.ef98217b.chunk.js.map": "/cafe-peter/static/js/3.ef98217b.chunk.js.map",
+    "index.html": "/cafe-peter/index.html",
+    "static/css/main.6ab62bdb.chunk.css.map": "/cafe-peter/static/css/main.6ab62bdb.chunk.css.map",
+    "static/js/2.839bdf25.chunk.js.LICENSE.txt": "/cafe-peter/static/js/2.839bdf25.chunk.js.LICENSE.txt",
+    "static/media/background.9bd94859.jpg": "/cafe-peter/static/media/background.9bd94859.jpg",
+    "static/media/coffee-2.141ece34.jpg": "/cafe-peter/static/media/coffee-2.141ece34.jpg",
+    "static/media/featured3.1285e7e2.jpg": "/cafe-peter/static/media/featured3.1285e7e2.jpg",
+    "static/media/product-1.63be156a.jpg": "/cafe-peter/static/media/product-1.63be156a.jpg",
+    "static/media/product-2.c1844873.jpg": "/cafe-peter/static/media/product-2.c1844873.jpg",
+    "static/media/product-3.d139ad73.jpg": "/cafe-peter/static/media/product-3.d139ad73.jpg",
+    "static/media/sweet-2.d5cf1ad2.jpg": "/cafe-peter/static/media/sweet-2.d5cf1ad2.jpg",
+    "static/media/sweet-3.badeecbe.jpg": "/cafe-peter/static/media/sweet-3.badeecbe.jpg",
+    "static/media/sweet3.c495c742.jpg": "/cafe-peter/static/media/sweet3.c495c742.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.45273f18.js",
+    "static/js/2.839bdf25.chunk.js",
+    "static/css/main.6ab62bdb.chunk.css",
+    "static/js/main.76b47d8e.chunk.js"
+  ]
+}
