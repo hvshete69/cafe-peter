@@ -11,6 +11,7 @@ import { productsData, productsDataTwo } from "./components/Products/data";
 import Feature from "./components/Feature";
 import Footer from "./components/Footer";
 
+import {BrowserRouter} from 'react-router-dom';
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(true);
   // const logIn = () => {
@@ -21,6 +22,7 @@ function App() {
   // };
 
   return (
+
     <Router>
       <Routes>
         <Route
