@@ -24,7 +24,8 @@ function App() {
     <Router>
       <Routes>
         <Route
-          path="/landingPage"
+          path="/cafe-peter/landingPage"
+          exact
           element={
             <Protected isLoggedIn={isLoggedIn}>
               {/* <CafePeterLandingPage /> */}
@@ -42,7 +43,7 @@ function App() {
           }
         />
         {/* <Route path="/" element={<InfoForm />} /> */}
-        <Route path="/" element={<InfoForm />} />
+        <Route path="/cafe-peter" exact element={<InfoForm />} />
       </Routes>
     </Router>
   );
