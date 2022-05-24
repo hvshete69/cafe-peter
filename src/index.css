@@ -13,6 +13,7 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+
 :root {
   --font-base: 'Cormorant Upright', serif;
   --font-alt: 'Open Sans', sans-serif;
@@ -23,6 +24,7 @@ body {
   --color-crimson: #F5EFDB;
   --color-grey: #AAAAAA;
   --color-white: #FFFFFF;
+  
 }
 
 * {

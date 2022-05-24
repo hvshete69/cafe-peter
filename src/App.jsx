@@ -12,6 +12,7 @@ import Feature from "./components/Feature";
 import Footer from "./components/Footer";
 
 import { BrowserRouter } from "react-router-dom";
+import { Formik } from "formik";
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(true);
   // const logIn = () => {
@@ -21,27 +22,27 @@ function App() {
   //   setisLoggedIn(false);
   // };
 
+  
   return (
-    <Routes>
-      <Route
-        path="/cafe-peter/landingPage"
-        exact
-        element={
-          <Protected isLoggedIn={isLoggedIn}>
-            {/* <CafePeterLandingPage /> */}
-
-            <GlobalStyle />
-            <Hero />
-            <Products heading="Choose your favorite" data={productsData} />
-            <Feature />
-            <Products heading="Sweet Treats for You" data={productsDataTwo} />
-            <Footer />
-          </Protected>
-        }
-      />
-      {/* <Route path="/" element={<InfoForm />} /> */}
-      <Route path="/cafe-peter" exact element={<InfoForm />} />
-    </Routes>
+      <Routes>
+        <Route
+          path="/cafe-peter/landingPage"
+          exact
+          element={
+            <Protected isLoggedIn={isLoggedIn}>
+              {/* <CafePeterLandingPage /> */}
+              <GlobalStyle />
+              <Hero />
+              <Products heading="Choose your favorite" data={productsData} />
+              <Feature />
+              <Products heading="Sweet Treats for You" data={productsDataTwo} />
+              <Footer />
+            </Protected>
+          }
+        />
+        {/* <Route path="/" element={<InfoForm />} /> */}
+        <Route path="/cafe-peter" exact element={<InfoForm />} />
+      </Routes>
   );
 }
 export default App;

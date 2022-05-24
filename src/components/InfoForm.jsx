@@ -1,3 +1,4 @@
+import React from "react";
 import styled from "styled-components";
 import Button from "./Button";
 import Icon from "./Icon";
@@ -5,13 +6,31 @@ import Input from "./Input";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import img from "../background.jpg";
-import { Formik } from "formik";
+import { Formik, useFormikContext } from "formik";
+import Axios from "axios";
 
 function InfoForm() {
   let history = useNavigate();
 
-  const redirect = path => {
+  const redirect = (path) => {
     history(path);
+  };
+
+  const [userData, setUserData] = React.useState("");
+
+  React.useEffect(() => {
+    Axios.get("http://localhost:3001/read").then((response) => {
+      console.log("RESP", response?.data);
+      setUserData(response?.data);
+    });
+  }, []);
+
+  const addUser = (values) => {
+    Axios.post("http://localhost:3001/insert", {
+      userName: values?.fullname,
+      email: values?.email,
+      phone: values?.phoneNumber,
+    });
   };
 
   const FacebookBackground =
@@ -55,9 +74,10 @@ function InfoForm() {
         onSubmit={(values, { setSubmitting }) => {
           setTimeout(() => {
             alert(JSON.stringify(values, null, 2));
+            addUser(values);
             setSubmitting(false);
           }, 400);
-          redirect('/cafe-peter/landingPage');
+          redirect("/cafe-peter/landingPage");
         }}
       >
         {({
@@ -106,27 +126,26 @@ function InfoForm() {
                     touched.phoneNumber &&
                     errors.phoneNumber}
                 </InputContainer>
-                  <button
-                    style={{
-                      background:
-                        "linear-gradient(to right, #14163c 0%, #03217b 79%)",
-                      textTransform: "uppercase",
-                      letterSpacing: "0.2rem",
-                      width: "200px",
-                      height: "3rem",
-                      border: "none",
-                      color: "white",
-                      borderRadius: "2rem",
-                      cursor: "pointer",
-                      marginTop: "35px",
-                      marginBottom: "100px",
-                    }}
-                    type="submit"
-                    disabled={isSubmitting}
-                    
-                  >
-                    Submit
-                  </button>
+                <button
+                  style={{
+                    background:
+                      "linear-gradient(to right, #14163c 0%, #03217b 79%)",
+                    textTransform: "uppercase",
+                    letterSpacing: "0.2rem",
+                    width: "200px",
+                    height: "3rem",
+                    border: "none",
+                    color: "white",
+                    borderRadius: "2rem",
+                    cursor: "pointer",
+                    marginTop: "35px",
+                    marginBottom: "100px",
+                  }}
+                  type="submit"
+                  disabled={isSubmitting}
+                >
+                  Submit
+                </button>
                 <ForgotPassword>Follow Us On</ForgotPassword>
                 <IconsContainer>
                   <Icon color={FacebookBackground}>
