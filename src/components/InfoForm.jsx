@@ -19,14 +19,14 @@ function InfoForm() {
   const [userData, setUserData] = React.useState("");
 
   React.useEffect(() => {
-    Axios.get("http://localhost:3001/read").then((response) => {
+    Axios.get("https://cafe-peter-mern.herokuapp.com/read").then((response) => {
       console.log("RESP", response?.data);
       setUserData(response?.data);
     });
   }, []);
 
   const addUser = (values) => {
-    Axios.post("http://localhost:3001/insert", {
+    Axios.post("https://cafe-peter-mern.herokuapp.com/insert", {
       userName: values?.fullname,
       email: values?.email,
       phone: values?.phoneNumber,
