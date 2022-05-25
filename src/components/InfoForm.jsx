@@ -5,7 +5,7 @@ import Icon from "./Icon";
 import Input from "./Input";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import { Link, Navigate, useNavigate } from "react-router-dom";
-import img from "../background.jpg";
+import img1 from "../background1.jpg";
 import { Formik, useFormikContext } from "formik";
 import Axios from "axios";
 
@@ -42,7 +42,7 @@ function InfoForm() {
   return (
     <div
       style={{
-        backgroundImage: `url("https://torange.biz/photofxnew/184/HD/dollars-desktop-wallpaper-184117.jpg")`,
+        backgroundImage: `url("https://c2.peakpx.com/wallpaper/841/690/341/coffee-red-black-led-wallpaper.jpg")`,
         backgroundSize: "cover",
         position: "fixed",
         padding: "0",
@@ -200,7 +200,7 @@ function InfoForm() {
 }
 
 const MainContainer = styled.div`
-  background-image: url(${img});
+  background-image: url(${img1});
   display: flex;
   align-items: center;
   flex-direction: column;
