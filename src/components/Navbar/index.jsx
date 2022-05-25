@@ -1,16 +1,16 @@
-import React from 'react'
-import { Nav, NavLink, NavIcon, Bars } from './NavbarElements';
+import React from "react";
+import { Nav, NavLink, NavIcon, Bars } from "./NavbarElements";
 
 const Navbar = ({ toggle }) => {
-    return (
-        <Nav> 
-            <NavLink to='/'>Cafe Peter</NavLink>
-            <NavIcon onClick={toggle}>
-                <p> Menu</p> 
-                <Bars />
-            </NavIcon> 
-        </Nav>
-    );
+  return (
+    <Nav>
+      <NavLink to="/">Cafe Peter</NavLink>
+      <NavIcon onClick={toggle}>
+          <p> Menu</p>
+          <Bars />
+      </NavIcon>
+    </Nav>
+  );
 };
 
 export default Navbar;

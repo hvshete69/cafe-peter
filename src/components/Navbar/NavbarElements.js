@@ -12,11 +12,12 @@ export const Nav = styled.nav`
 
     export const NavLink = styled(Link)`
         color:#fff;
-        font-size: 2rem;
+        font-size: 3rem;
         display: flex;
         align-items: center;
         text-decoration: none;
         cursor: pointer;
+        font-family: 'Dancing Script', cursive;
         
         @media screen and (max-width: 400px) {
             position: absolute;
@@ -34,7 +35,7 @@ export const Nav = styled.nav`
     color: #fff;
 
     p {
-        transform: translate(-175%, 100%);
+        transform: translate(-150%, 150%);
         font-weight: bold;
     }
     `
