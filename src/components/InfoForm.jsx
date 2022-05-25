@@ -73,7 +73,6 @@ function InfoForm() {
         }}
         onSubmit={(values, { setSubmitting }) => {
           setTimeout(() => {
-            alert(JSON.stringify(values, null, 2));
             addUser(values);
             setSubmitting(false);
           }, 400);

@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import InfoForm from "./components/InfoForm";
 import { useState } from "react";
 import Protected from "./components/Protected";
@@ -24,6 +24,7 @@ function App() {
 
   
   return (
+    <Router>
       <Routes>
         <Route
           path="/cafe-peter/landingPage"
@@ -41,8 +42,10 @@ function App() {
           }
         />
         {/* <Route path="/" element={<InfoForm />} /> */}
-        <Route path="/cafe-peter" exact element={<InfoForm />} />
+        <Route path="/" exact element={<InfoForm />} />
       </Routes>
+    </Router>
+
   );
 }
 export default App;
