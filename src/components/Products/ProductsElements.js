@@ -32,15 +32,19 @@ export const ProductsHeading = styled.h1`
   font-size: clamp(2rem, 2.5vw, 3rem);
   text-align: center;
   margin-bottom: 5rem;
+  font-family: 'Roboto Condensed';
+
 `;
 
 export const ProductTitle = styled.h2`
   font-weight: 400;
+  font-family: 'Roboto Condensed';
   font-size: 1.5rem;
 `;
 
 export const ProductInfo = styled.div`
   display: flex;
+  font-family: 'Roboto Condensed';
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -50,11 +54,13 @@ export const ProductInfo = styled.div`
 
 export const ProductDesc = styled.p`
   margin-bottom: 1rem;
+  font-family: 'Roboto Condensed';
 `;
 
 export const ProductPrice = styled.p`
   margin-bottom: 1rem;
   font-size: 2rem;
+  font-family: 'Roboto Condensed';
 `;
 
 export const ProductButton = styled.button`
@@ -63,6 +69,7 @@ export const ProductButton = styled.button`
   border: none;
   background: #e31837;
   color: #fff;
+  font-family: 'Roboto Condensed';
   transition: 0.2 ease-out;
 
   &:hover {

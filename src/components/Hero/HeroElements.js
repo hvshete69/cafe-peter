@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import ImgBg from '../images/coffee-2.jpg';
+import ImgBg from '../images/coffee-23.jpg';
 
 export const HeroContainer = styled.div`
   background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
@@ -35,6 +35,7 @@ export const HeroItems = styled.div`
 
 export const HeroH1 = styled.h1`
   font-size: clamp(2.5rem, 10vw, 5rem);
+  font-family: 'Roboto Condensed';
   margin-bottom: 1rem;
   box-shadow: 3px 5px #e9ba23;
   letter-spacing: 3px;
@@ -48,6 +49,7 @@ export const HeroP = styled.p`
 export const HeroBtn = styled.a`
   font-size: 1.4rem;
   padding: 1rem 4rem;
+  font-family: 'Roboto Condensed';
   border: none;
   background: #e31837;
   color: #fff;

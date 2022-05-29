@@ -52,13 +52,14 @@ const Hero = () => {
     <HeroContainer>
       <Navbar toggle={toggle} />
       <Marquee
-        style={{ background: "#B4161B", height: "50px" }}
+        style={{ background: "#B4161B", height: "50px" , }}
         gradient={false}
         speed={40}
       >
-        <h1 > &nbsp; 30% Off on Regular Size Pizzas!! &nbsp; |</h1>
+        <h1 style={{color:'#fff'}}> &nbsp; 30% Off on Regular Size Pizzas!! &nbsp; |</h1>
         <h1>&nbsp;10% Off on orders above $500!! &nbsp; | </h1>
-        <h1> &nbsp; 20% Off on code TRYNEW!! &nbsp; |</h1>
+        <h1 style={{color:'#fff'}}> &nbsp; 20% Off on code TRYNEW!! &nbsp; |</h1>
+        <h1 > &nbsp; 20% Off on code TRYNEW!! &nbsp; |</h1>
       </Marquee>
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <HeroContent>

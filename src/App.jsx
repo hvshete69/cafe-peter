@@ -11,10 +11,12 @@ import { productsData, productsDataTwo } from "./components/Products/data";
 import Feature from "./components/Feature";
 import Footer from "./components/Footer";
 
+
 import { BrowserRouter } from "react-router-dom";
 import { Formik } from "formik";
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
   // const logIn = () => {
   //   setisLoggedIn(true);
   // };
@@ -31,10 +33,9 @@ function App() {
           exact
           element={
             <Protected isLoggedIn={isLoggedIn}>
-              {/* <CafePeterLandingPage /> */}
               <GlobalStyle />
-              <Hero />
-              <Products heading="Choose your favorite" data={productsData} />
+              <Hero  />
+              <Products heading="CHOOSE YOUR FAVOURITE" data={productsData} />
               <Feature />
               <Products heading="Sweet Treats for You" data={productsDataTwo} />
               <Footer />
@@ -42,7 +43,7 @@ function App() {
           }
         />
         {/* <Route path="/" element={<InfoForm />} /> */}
-        <Route path="/" exact element={<InfoForm />} />
+        <Route path="/" exact element={<InfoForm isLoggedIn={setIsLoggedIn}/>} />
       </Routes>
     </Router>
 

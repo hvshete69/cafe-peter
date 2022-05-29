@@ -42,6 +42,7 @@ export const SocialLogo = styled(Link)`
   align-items: center;
   margin-bottom: 16px;
   font-weight: bold;
+  font-family: 'Dancing Script', cursive;
 `;
 
 export const SocialIcons = styled.div`

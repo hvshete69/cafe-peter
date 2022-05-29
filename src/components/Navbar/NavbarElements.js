@@ -12,17 +12,17 @@ export const Nav = styled.nav`
 
     export const NavLink = styled(Link)`
         color:#fff;
-        font-size: 3rem;
+        font-family: 'Roboto Condensed';
+        font-size: 2rem;
         display: flex;
         align-items: center;
         text-decoration: none;
         cursor: pointer;
-        font-family: 'Dancing Script', cursive;
         
         @media screen and (max-width: 400px) {
             position: absolute;
-            top: 10px;
-            left: 25px;
+            top: 22px;
+            left: 15px;
         }
     `;
 
@@ -36,11 +36,22 @@ export const Nav = styled.nav`
 
     p {
         transform: translate(-150%, 150%);
+        font-family: 'Roboto Condensed';
         font-weight: bold;
+        font-size: 20px;
+        @media screen and (max-width: 400px) {
+            position: absolute;
+            top: -3px;
+            left: 15px;
+        }
     }
     `
 
     export const Bars = styled(FaMugHot)`
         font-size: 2rem;
         transform: tranform(-50%, -15%);
+        @media screen and (max-width: 400px) {
+            position: relative;
+            top: 20px;
+        }
         `;

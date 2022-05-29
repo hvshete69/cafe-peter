@@ -4,8 +4,9 @@ import { FeatureContainer, FeatureButton } from './FeatureElements';
 const Feature = () => {
   return (
     <FeatureContainer>
-      <h1>Coffee of the Day</h1>
-      <p> CAFÉ MOCHA Chocolate Powder, Dark Roasted Coffee Beans, Skimmed Milk, Whipped Cream</p>
+  
+      <h1 style={{fontFamily: 'Roboto Condensed'}}>Coffee of the Day</h1>
+      <p  style={{fontFamily: 'Roboto Condensed'}}> CAFÉ MOCHA Chocolate Powder, Dark Roasted Coffee Beans, Skimmed Milk, Whipped Cream</p>
       <FeatureButton>Order Now</FeatureButton>
     </FeatureContainer>
   );

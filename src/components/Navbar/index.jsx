@@ -4,10 +4,10 @@ import { Nav, NavLink, NavIcon, Bars } from "./NavbarElements";
 const Navbar = ({ toggle }) => {
   return (
     <Nav>
-      <NavLink to="/">Cafe Peter</NavLink>
+      <NavLink to="/">CAFÉ PETER</NavLink>
       <NavIcon onClick={toggle}>
-          <p> Menu</p>
-          <Bars />
+        <p> Menu</p>
+        <Bars />
       </NavIcon>
     </Nav>
   );

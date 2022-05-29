@@ -9,7 +9,7 @@ import img1 from "../background1.jpg";
 import { Formik, useFormikContext } from "formik";
 import Axios from "axios";
 
-function InfoForm() {
+function InfoForm({isLoggedIn}) {
   let history = useNavigate();
 
   const redirect = (path) => {
@@ -22,6 +22,9 @@ function InfoForm() {
     Axios.get("https://cafe-peter-mern.herokuapp.com/read").then((response) => {
       console.log("RESP", response?.data);
       setUserData(response?.data);
+      if(response?.data){
+        isLoggedIn(true);
+      }
     });
   }, []);
 

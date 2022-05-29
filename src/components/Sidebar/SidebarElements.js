@@ -11,7 +11,7 @@ export const Img = styled.img.attrs({ src: "/cafe-peter-menu/image-001.png" })`
 export const SidebarContainer = styled.aside`
   position: fixed;
   z-index: 4;
-  width: 350px;
+  width: 400px;
   height: 100%;
   background: #000000;
   display: grid;
@@ -42,7 +42,7 @@ export const Icon = styled.div`
 export const SidebarMenu = styled.div`
   position: fixed;
   overflow-y: scroll;
-  width: 377px;
+  width: 407px;
   top: 0;
   bottom: 0;
   display: grid;
@@ -50,7 +50,7 @@ export const SidebarMenu = styled.div`
   grid-template-rows: repeat(3, 740px);
   text-align: center;
   @media screen and (max-width: 480px) {
-    grid-template-rows: repeat(3, 740px);
+    grid-template-rows: repeat(3, 840px);
   }
 `;
 
